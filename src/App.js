@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import GithubImage from './GitHub-Mark-120px-plus.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container text-center">
+      <h1 className="py-5 text-uppercase">Github profile</h1>
+      <form>
+        <div className="form-group">
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              required
+            />
+            <span className="input-group-btn">
+              <button type='submit' className="btn btn-success">
+                Search
+              </button>
+            </span>
+          </div>
+        </div>
+      </form>
+      <div className="py-5">
+        <img src={GithubImage} className="responsive rounded-circle" alt="" height="200px" />
+      </div>
+      <h1 className="pt-5">
+        <a href="https://github.com/brunohprada" target="_new">Bruno Prada</a>
+      </h1>
+      <h3>Osasco</h3>
+      <p>
+        <a href="https://github.com" target="_new" className="text-info">https://github.com</a>
+      </p>
     </div>
   );
 }
